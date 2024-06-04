@@ -1,0 +1,44 @@
+.tabnav{
+    overflow: hidden;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.tab-btn {
+    background-color: rgba(255, 0, 0, 0.995);
+    font-size: large;
+    outline: none;
+    border: none;
+    padding: 2rem 3rem;
+    transition: 0.3s;
+    color:white;
+}
+
+.tab-btn:hover{
+    background-color: #c30000d1;
+}
+
+.tab-btn:active{
+    background-color:rgb(98, 0, 0);
+}
+
+.tab-content{
+    display: none;
+    padding: 0.5rem 2rem;
+    border-top: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.tab-content{
+    animation: fadeEffect 1s;
+}
+
+
+@keyframes fadeEffect{
+    from{opacity: 0}
+    to{opacity: 1}
+}
