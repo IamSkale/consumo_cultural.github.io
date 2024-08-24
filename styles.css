@@ -1,0 +1,888 @@
+header {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: rgb(0, 0, 172);
+    margin-left: 20%;
+    width: 60%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+video{
+    margin-left: 20%;
+    width: 60%;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90%;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    text-align: center;
+}
+
+#endtext {
+    margin-bottom: 30px;
+}
+
+#presentacion {
+    margin-bottom: 20px;
+}
+
+[class^="color_"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 30%;
+}
+
+[class^="piepart_"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+[class^="piepart_"]:hover {
+    transform: scale(1.025);
+}
+
+[class^="fullbar_"] {
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.pie_percentage{
+    position: calc(0);
+}
+.nav_btn,
+.btn {
+    padding: 10px;
+    width: 20%;
+    height: 100px;
+    background-color:rgb(0, 0, 172);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    outline: none;
+    border: none;
+    color:white;
+    transition: 0.4s;
+}
+.subtab{
+    width: 85%;
+    margin-left: 7%;
+    background-color:rgb(184, 217, 228);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.tab_content {
+    width: 85%;
+    margin-left: 7.5%;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeEffect 0.6s;
+    background-color:lavender;
+}
+
+.home {
+    animation: fadeEffect 0.6s;
+}
+
+.navbar {
+    margin-left: 20%;
+    width: 60%;
+    overflow: hidden;
+    display: flex;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-left: 35%;
+    width: 30%;
+    border-radius: 8px;
+}
+
+.nav_btn:hover,
+.btn:hover {
+    background-color:midnightblue;
+}
+
+.tab_text {
+    text-align: center;
+    margin-bottom: 5px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.leyenda {
+    margin-left: 10%;
+}
+
+.leyenda_elemento {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.piechart {
+    align-items: center;
+    margin-left: 8%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.chart {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+
+.barchart {
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.barname {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    margin-bottom: 3px;
+    margin-left: 5px;
+}
+
+.empty_bar {
+    width: 100%;
+    height: 15px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.percentage {
+    margin-left: 2%;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+.empty_bar:hover .percentage {
+    opacity: 1;
+}
+
+.piepart_musica,
+.color_musica,
+.piepart_telegramM,
+.color_telegramM,
+.piepart_paqueteC,
+.color_paqueteC,
+.piepart_telegramL,
+.color_telegramL,
+.piepart_pinterest,
+.color_pinterest,
+.fullbar_pintura,
+.fullbar_comediaC,
+.fullbar_fantasia,
+.fullbar_pop {
+    background-color: tomato;
+}
+
+.piepart_musica:hover,
+.piepart_telegramM:hover,
+.piepart_paqueteC:hover,
+.piepart_telegramL:hover,
+.piepart_pinterest:hover,
+.fullbar_pintura:hover,
+.fullbar_comediaC:hover,
+.fullbar_fantasia:hover,
+.fullbar_pop:hover {
+    background-color: crimson;
+}
+
+.piepart_cine,
+.color_cine,
+.piepart_youtubeM,
+.color_youtubeM,
+.piepart_telegramC,
+.color_telegramC,
+.piepart_fisico,
+.color_fisico,
+.piepart_instagram,
+.color_instagram,
+.fullbar_artesania,
+.fullbar_misterioC,
+.fullbar_ficcionL,
+.fullbar_rock {
+    background-color: orange;
+}
+
+.piepart_cine:hover,
+.piepart_youtubeM:hover,
+.piepart_telegramC:hover,
+.piepart_fisico:hover,
+.piepart_instagram:hover,
+.fullbar_artesania:hover,
+.fullbar_misterioC:hover,
+.fullbar_ficcionL:hover,
+.fullbar_rock:hover {
+    background-color: orangered;
+}
+
+.piepart_literatura,
+.color_literatura,
+.piepart_spotify,
+.color_spotify,
+.piepart_netflix,
+.color_netflix,
+.piepart_wattpad,
+.color_wattpad,
+.piepart_galerias,
+.color_galerias,
+.fullbar_escultura,
+.fullbar_accion,
+.fullbar_romanceL,
+.fullbar_reggaeton {
+    background-color: yellow;
+}
+
+.piepart_literatura:hover,
+.piepart_spotify:hover,
+.piepart_netflix:hover,
+.piepart_wattpad:hover,
+.piepart_galerias:hover,
+.fullbar_escultura:hover,
+.fullbar_accion:hover,
+.fullbar_romanceL:hover,
+.fullbar_reggaeton:hover {
+    background-color: darkgoldenrod;
+
+}
+
+.piepart_fotografia,
+.color_fotografia,
+.piepart_deezer,
+.color_deezer,
+.piepart_otrosC,
+.color_otrosC,
+.fullbar_grabado,
+.fullbar_drama,
+.fullbar_misterioL,
+.fullbar_hiphop {
+    background-color: lime;
+}
+
+.piepart_fotografia:hover,
+.piepart_deezer:hover,
+.piepart_otrosC:hover,
+.fullbar_grabado:hover,
+.fullbar_drama:hover,
+.fullbar_misterioL:hover,
+.fullbar_hiphop:hover {
+    background-color: green;
+}
+
+.piepart_snaptubeM,
+.color_snaptubeM,
+.piepart_youtubeC,
+.color_youtubeC,
+.fullbar_fotografia,
+.fullbar_suspensoC,
+.fullbar_suspensoL,
+.fullbar_jazz {
+    background-color: yellowgreen;
+}
+
+.piepart_snaptubeM:hover,
+.piepart_youtubeC:hover,
+.fullbar_fotografia:hover,
+.fullbar_suspensoC:hover,
+.fullbar_suspensoL:hover,
+.fullbar_jazz:hover {
+    background-color: darkgreen;
+}
+
+.piepart_appleM,
+.color_appleM,
+.piepart_tv,
+.color_tv,
+.fullbar_aventuraC,
+.fullbar_historia,
+.fullbar_trap {
+    background-color: thistle;
+}
+
+.piepart_appleM:hover,
+.piepart_tv:hover,
+.fullbar_aventuraC:hover,
+.fullbar_historia:hover,
+.fullbar_trap:hover {
+    background-color: grey;
+}
+
+.piepart_moda,
+.color_moda,
+.piepart_youtubeMM,
+.color_youtubeMM,
+.piepart_visuales,
+.color_visuales,
+.fullbar_terrorC,
+.fullbar_comediaL,
+.fullbar_blues {
+    background-color: pink;
+}
+
+.piepart_moda:hover,
+.piepart_youtubeMM:hover,
+.piepart_visuales:hover,
+.fullbar_terrorC:hover,
+.fullbar_comediaL:hover,
+.fullbar_blues:hover {
+    background-color: darksalmon;
+}
+
+.piepart_artePlastica,
+.color_artePlastica,
+.piepart_vidmate,
+.color_vidmate,
+.piepart_picta,
+.color_picta,
+.piepart_otrosL,
+.color_otrosL,
+.piepart_youtubeAP,
+.color_youtubeAP,
+.fullbar_musical,
+.fullbar_ciencia,
+.fullbar_trova {
+    background-color: hotpink;
+}
+
+.piepart_artePlastica:hover,
+.piepart_vidmate:hover,
+.piepart_picta:hover,
+.piepart_otrosL:hover,
+.piepart_youtubeAP:hover,
+.fullbar_musical:hover,
+.fullbar_ciencia:hover,
+.fullbar_trova:hover {
+    background-color: deeppink;
+}
+
+.piepart_cines,
+.color_cines,
+.fullbar_scifi,
+.fullbar_poesia,
+.fullbar_experimental {
+    background-color: magenta;
+}
+
+.piepart_cines:hover,
+.fullbar_scifi:hover,
+.fullbar_poesia:hover,
+.fullbar_experimental:hover {
+    background-color: darkmagenta;
+}
+
+.piepart_paqueteM,
+.color_paqueteM,
+.piepart_hbo,
+.color_hbo,
+.piepart_kindle,
+.color_kindle,
+.piepart_otrosAP,
+.color_otrosAP,
+.fullbar_romanceC,
+.fullbar_autoayuda,
+.piepart_teatro,
+.color_teatro,
+.fullbar_funk {
+    background-color: brown;
+}
+
+.piepart_paqueteM:hover,
+.piepart_kindle:hover,
+.piepart_hbo:hover,
+.piepart_otrosAP:hover,
+.fullbar_romanceC:hover,
+.fullbar_autoayuda:hover,
+.piepart_teatro:hover,
+.fullbar_funk:hover {
+    background-color: maroon;
+}
+
+.fullbar_ficcionC,
+.fullbar_aventuraL,
+.fullbar_edm {
+    background-color: chocolate;
+}
+
+.fullbar_ficcionC:hover,
+.fullbar_aventuraL:hover,
+.fullbar_edm:hover {
+    background-color: firebrick;
+}
+
+.fullbar_hecReales,
+.fullbar_filosofia,
+.fullbar_rumba {
+    background-color: lightcoral;
+}
+
+.fullbar_hecReales:hover,
+.fullbar_filosofia:hover,
+.fullbar_rumba:hover {
+    background-color: coral;
+}
+
+.fullbar_biografico,
+.fullbar_terror,
+.fullbar_rnb {
+    background-color: lightsalmon;
+}
+
+.fullbar_biografico:hover,
+.fullbar_terror:hover,
+.fullbar_rnb:hover {
+    background-color: salmon;
+}
+
+.fullbar_western,
+.fullbar_corridos {
+    background-color: lightpink;
+}
+
+.fullbar_western:hover,
+.fullbar_corridos:hover {
+    background-color: violet;
+}
+
+.fullbar_indie {
+    background-color: violet;
+}
+
+.fullbar_indie:hover {
+    background-color: mediumvioletred;
+}
+
+.fullbar_flamenco {
+    background-color: orchid;
+}
+
+.fullbar_flamenco:hover {
+    background-color: mediumorchid;
+}
+
+.fullbar_salsa {
+    background-color: blueviolet;
+}
+
+.fullbar_salsa:hover {
+    background-color: darkmagenta;
+}
+
+.fullbar_bachata {
+    background-color: slateblue;
+}
+
+.fullbar_bachata:hover {
+    background-color: darkslateblue;
+}
+
+.fullbar_clasica {
+    background-color: blue;
+}
+
+.fullbar_clasica:hover {
+    background-color: darkblue;
+}
+
+.fullbar_country {
+    background-color: navy;
+}
+
+.fullbar_country:hover {
+    background-color: midnightblue;
+}
+
+/*piechart de ramas del arte*/
+.piepart_musica {
+    clip-path: polygon(50% 50%, 0 100%, 0 0, 100% 0, 100% 53.2%);
+}
+
+.piepart_cine {
+    clip-path: polygon(50% 50%, 100% 53.2%, 100% 100%, 77.2% 100%);
+}
+
+.piepart_literatura {
+    clip-path: polygon(50% 50%, 77.2% 100%, 28.4% 100%);
+}
+
+.piepart_fotografia {
+    clip-path: polygon(50% 50%, 28.4% 100%, 12% 100%);
+}
+
+.piepart_moda {
+    clip-path: polygon(50% 50%, 12% 100%, 7.2% 100%);
+}
+
+.piepart_artePlastica {
+    clip-path: polygon(50% 50%, 7.2% 100%, 2.4% 100%);
+}
+
+.piepart_teatro {
+    clip-path: polygon(50% 50%, 2.4% 100%, 0% 100%);
+}
+
+/*piechart de plat musica*/
+.piepart_telegramM {
+    clip-path: polygon(50% 50%, 0 100%, 0 0, 92.8% 0);
+}
+
+.piepart_youtubeM {
+    clip-path: polygon(50% 50%, 92.8% 0%, 100% 0%, 100% 84.4%);
+}
+
+.piepart_spotify {
+    clip-path: polygon(50% 50%, 100% 84.4%, 100% 100%, 70.8% 100%);
+}
+
+.piepart_deezer {
+    clip-path: polygon(50% 50%, 70.8% 100%, 35.6% 100%);
+}
+
+.piepart_snaptubeM {
+    clip-path: polygon(50% 50%, 35.6% 100%, 24% 100%);
+}
+
+.piepart_appleM {
+    clip-path: polygon(50% 50%, 24% 100%, 14.4% 100%);
+}
+
+.piepart_youtubeMM {
+    clip-path: polygon(50% 50%, 14.4% 100%, 7.2% 100%);
+}
+
+.piepart_vidmate {
+    clip-path: polygon(50% 50%, 7.2% 100%, 2.4% 100%);
+}
+
+.piepart_paqueteM {
+    clip-path: polygon(50% 50%, 2.4% 100%, 0% 100%);
+}
+
+/*piechart de plat cine*/
+.piepart_paqueteC {
+    clip-path: polygon(50% 50%, 0 100%, 0 0, 49.2% 0);
+}
+
+.piepart_telegramC {
+    clip-path: polygon(50% 50%, 49.2% 0%, 100% 0, 100% 36%);
+}
+
+
+.piepart_netflix {
+    clip-path: polygon(50% 50%, 100% 36%, 100% 100%, 94.4% 100%);
+}
+
+.piepart_otrosC {
+    clip-path: polygon(50% 50%, 94.4% 100%, 59.6% 100%);
+}
+
+.piepart_youtubeC {
+    clip-path: polygon(50% 50%, 59.6% 100%, 42.4% 100%);
+}
+
+.piepart_tv {
+    clip-path: polygon(50% 50%, 42.4% 100%, 30% 100%);
+}
+
+.piepart_visuales {
+    clip-path: polygon(50% 50%, 30% 100%, 17.6% 100%);
+}
+
+.piepart_picta {
+    clip-path: polygon(50% 50%, 17.6% 100%, 10% 100%);
+}
+
+.piepart_cines {
+    clip-path: polygon(50% 50%, 10% 100%, 2.4% 100%);
+}
+
+.piepart_hbo {
+    clip-path: polygon(50% 50%, 2.4% 100%, 0% 100%);
+}
+
+/*piechart de plat literatura*/
+.piepart_telegramL {
+    clip-path: polygon(50% 50%, 0 100%, 0 0, 53.2% 0);
+}
+
+.piepart_fisico {
+    clip-path: polygon(50% 50%, 53.2% 0%, 100% 0, 100% 75.2%);
+}
+
+.piepart_wattpad {
+    clip-path: polygon(50% 50%, 100% 75.2%, 100% 100%, 60% 100%);
+}
+
+.piepart_otrosL {
+    clip-path: polygon(50% 50%, 60% 100%, 13.2% 100%);
+}
+
+.piepart_kindle {
+    clip-path: polygon(50% 50%, 13.2% 100%, 0% 100%);
+}
+
+/*piechart de plat arte plst*/
+
+.piepart_pinterest {
+    clip-path: polygon(50% 50%, 0 100%, 0 0, 67.6% 0);
+}
+
+.piepart_instagram {
+    clip-path: polygon(50% 50%, 67.6% 0%, 100% 0, 100% 100%, 92% 100%);
+}
+
+.piepart_galerias {
+    clip-path: polygon(50% 50%, 92% 100%, 35.2% 100%);
+}
+
+.piepart_youtubeAP {
+    clip-path: polygon(50% 50%, 35.2% 100%, 5.6% 100%);
+}
+
+.piepart_otrosAP {
+    clip-path: polygon(50% 50%, 5.6% 100%, 0 100%);
+}
+
+/*ap fav*/
+.fullbar_pintura {
+    width: 76.8%;
+}
+
+.fullbar_artesania {
+    width: 12%;
+}
+
+.fullbar_escultura {
+    width: 7.7%;
+}
+
+.fullbar_grabado {
+    width: 2.8%;
+}
+
+.fullbar_fotografia {
+    width: 0.7%;
+}
+
+/*gen cine fav*/
+.fullbar_comediaC {
+    width: 58.7%;
+}
+
+.fullbar_misterioC {
+    width: 36%;
+}
+
+.fullbar_accion {
+    width: 35.5%;
+}
+
+.fullbar_drama {
+    width: 32.6%;
+}
+
+.fullbar_suspensoC {
+    width: 30.8%;
+}
+
+.fullbar_aventuraC {
+    width: 29%;
+}
+
+.fullbar_terrorC {
+    width: 25%;
+}
+
+.fullbar_musical {
+    width: 11.6%;
+}
+
+.fullbar_scifi {
+    width: 5.2%;
+}
+
+.fullbar_romanceC {
+    width: 4.7%;
+}
+
+.fullbar_ficcionC {
+    width: 4.1%;
+}
+
+.fullbar_hecReales {
+    width: 1.2%;
+}
+
+.fullbar_biografico {
+    width: 1.2%;
+}
+
+.fullbar_western {
+    width: 0.6%;
+}
+
+/*gen lit fav*/
+.fullbar_fantasia {
+    width: 39.5%;
+}
+
+.fullbar_ficcionL {
+    width: 36%;
+}
+
+.fullbar_romanceL {
+    width: 36%;
+}
+
+.fullbar_misterioL {
+    width: 36%;
+}
+
+.fullbar_suspensoL {
+    width: 26.2%;
+}
+
+.fullbar_historia {
+    width: 20.9%;
+}
+
+.fullbar_comediaL {
+    width: 15.1%;
+}
+
+.fullbar_ciencia {
+    width: 14.5%;
+}
+
+.fullbar_poesia {
+    width: 14%;
+}
+
+.fullbar_autoayuda {
+    width: 7%;
+}
+
+.fullbar_aventuraL {
+    width: 2.3%;
+}
+
+.fullbar_filosofia {
+    width: 1.2%;
+}
+
+.fullbar_terror {
+    width: 1.2%;
+}
+
+/*gen musical fav*/
+.fullbar_pop {
+    width: 62.8%;
+}
+
+.fullbar_rock {
+    width: 47.7%;
+}
+
+.fullbar_reggaeton {
+    width: 30.2%;
+}
+
+.fullbar_hiphop {
+    width: 26.7%;
+}
+
+.fullbar_jazz {
+    width: 17.4%;
+}
+
+.fullbar_trap {
+    width: 14.5%;
+}
+
+.fullbar_blues {
+    width: 14.5%;
+}
+
+.fullbar_trova {
+    width: 14.5%;
+}
+
+.fullbar_experimental {
+    width: 14%;
+}
+
+.fullbar_funk {
+    width: 9.3%;
+}
+
+.fullbar_edm {
+    width: 7%;
+}
+
+.fullbar_rumba {
+    width: 5.2%;
+}
+
+.fullbar_rnb {
+    width: 2.3%;
+}
+
+.fullbar_corridos {
+    width: 2.3%;
+}
+
+.fullbar_indie {
+    width: 2.3%;
+}
+
+.fullbar_flamenco {
+    width: 2.3%;
+}
+
+.fullbar_salsa {
+    width: 1.2%;
+}
+
+.fullbar_bachata {
+    width: 1.2%;
+}
+
+.fullbar_clasica {
+    width: 1.2%;
+}
+
+.fullbar_country {
+    width: 1.2%;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

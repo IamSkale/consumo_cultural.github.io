@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<link rel="stylesheet" href="./styles.css" />
+
+<script src="script.js"></script>
+
+<head>
+    <title>"Consumo Cultural en Cuba"</title>
+</head>
+
+<body>
+    <div>
+        <div class=" navbar">
+            <button class="nav_btn" onclick="openPage ('index.html')">Inicio</button>
+            <button class="nav_btn" onclick="openPage ('Page I.html')">I </button>
+            <button class="nav_btn" onclick="openPage ('Page II.html')">II </button>
+            <button class="nav_btn" onclick="openPage ('Page III.html')">III </button>
+            <button class="nav_btn" onclick="openPage ('Page IV.html')">IV </button>
+        </div>
+        <div class="tab_content">
+            <p class="tab_text" id="endtext">
+                Por último, decidimos preguntar a estos jóvenes por las plataformas donde suelen disfrutar de cada rama
+                de la cultura y obtuvimos las siguientes respuestas:
+            </p>
+            <div class="subtab">
+                <h2 class="chart_title">Plataforma de Música Favorita</h2>
+                <div class="piechart" id="plataforma_musica">
+
+                    <div class="chart">
+                        <div class="piepart_telegramM"></div>
+                        <div class="piepart_youtubeM"></div>
+                        <div class="piepart_spotify"></div>
+                        <div class="piepart_deezer"></div>
+                        <div class="piepart_snaptubeM"></div>
+                        <div class="piepart_appleM"></div>
+                        <div class="piepart_youtubeMM"></div>
+                        <div class="piepart_vidmate"></div>
+                        <div class="piepart_paqueteM"></div>
+                    </div>
+
+                    <div class="leyenda">
+
+                        <div class="leyenda_elemento">
+                            <div class="color_telegramM"></div>
+                            <p>Telegram 48.2%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_youtubeM"></div>
+                            <p>Youtube 22.9%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_spotify"></div>
+                            <p>Spotify 11.2%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_deezer"></div>
+                            <p>Deezer 8.8%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_snaptubeM"></div>
+                            <p>Snaptube 2.9%</p>
+                        </div>
+
+                    </div>
+
+                    <div class="leyenda">
+
+                        <div class="leyenda_elemento">
+                            <div class="color_appleM"></div>
+                            <p>Apple Music 2.4%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_youtubeMM"></div>
+                            <p>Youtube Music 1.8%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_vidmate"></div>
+                            <p>Vidmate 1.2%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_paqueteM"></div>
+                            <p>Paquete Semanal 0.6%</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <p class="tab_text" id="endtext">
+                Esto solo nos muestra que la facilidad que nos presta Telegram a la hora de buscar música nueva es
+                bastante, a diferencia de Spotify con la necesidad de un VPN o de estar conectado todo el tiempo al
+                igual que Youtube Music por ejemplo.
+            </p>
+            <div class="subtab">
+                <h2 class="chart_title">Plataforma de Cine Favorita</h2>
+                <div class="piechart" id="plataforma_cine">
+
+                    <div class="chart">
+                        <div class="piepart_paqueteC"></div>
+                        <div class="piepart_telegramC"></div>
+                        <div class="piepart_netflix"></div>
+                        <div class="piepart_otrosC"></div>
+                        <div class="piepart_youtubeC"></div>
+                        <div class="piepart_tv"></div>
+                        <div class="piepart_visuales"></div>
+                        <div class="piepart_picta"></div>
+                        <div class="piepart_cines"></div>
+                        <div class="piepart_hbo"></div>
+                    </div>
+
+                    <div class="leyenda">
+
+                        <div class="leyenda_elemento">
+                            <div class="color_paqueteC"></div>
+                            <p>Paquete Semanal 37.3%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_telegramC"></div>
+                            <p>Telegram 21.7%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_netflix"></div>
+                            <p>Netflix 17.4%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_otrosC"></div>
+                            <p>Otros 8.7%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_youtubeC"></div>
+                            <p>Youtube 4.3%</p>
+                        </div>
+
+                    </div>
+
+                    <div class="leyenda">
+
+                        <div class="leyenda_elemento">
+                            <div class="color_tv"></div>
+                            <p>Television 3.1%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_visuales"></div>
+                            <p>Visuales 3.1%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_picta"></div>
+                            <p>Picta.cu 1.9%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_cines"></div>
+                            <p>Cines 1.9%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_hbo"></div>
+                            <p>HBO 0.6%</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <p class="tab_text" id="endtext">
+                Aquí se ve como el Paquete semanal sigue desde hace años formando parte de nuestras vidas, a la amplitud
+                de los contenidos que abarcan.
+            </p>
+            <div class="subtab">
+                <h2 class="chart_title">Plataforma de Literatura Favorita</h2>
+                <div class="piechart" id="plataforma_literatura">
+
+                    <div class="chart">
+                        <div class="piepart_telegramL"></div>
+                        <div class="piepart_fisico"></div>
+                        <div class="piepart_wattpad"></div>
+                        <div class="piepart_otrosL"></div>
+                        <div class="piepart_kindle"></div>
+                    </div>
+
+                    <div class="leyenda">
+
+                        <div class="leyenda_elemento">
+                            <div class="color_telegramL"></div>
+                            <p>Telegram 38.3%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_fisico"></div>
+                            <p>Libros Fisicos 30.5%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_wattpad"></div>
+                            <p>Wattpad 16.2%</p>
+                        </div>
+
+                    </div>
+
+                    <div class="leyenda">
+
+                        <div class="leyenda_elemento">
+                            <div class="color_otrosL"></div>
+                            <p>Otros 11.7%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_kindle"></div>
+                            <p>Kindle 3.3%</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <p class="tab_text" id="endtext">
+                Telegram toma la delantera de nuevo pero la lectura en físico no se queda atrás por mucho, a pesar de lo
+                difícil que puede resultar a veces conseguir libros nuevos.
+            </p>
+            <div class="subtab">
+                <h2 class="chart_title">Plataforma de Artes Plásticas Favorita</h2>
+                <div class="piechart" id="plataforma_artesPlast">
+
+                    <div class="chart">
+                        <div class="piepart_pinterest"></div>
+                        <div class="piepart_instagram"></div>
+                        <div class="piepart_galerias"></div>
+                        <div class="piepart_youtubeAP"></div>
+                        <div class="piepart_otrosAP"></div>
+                    </div>
+
+                    <div class="leyenda">
+
+                        <div class="leyenda_elemento">
+                            <div class="color_pinterest"></div>
+                            <p>Pinterest 41.9%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_instagram"></div>
+                            <p>Instagram 35.1%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_galerias"></div>
+                            <p>Galerias de Arte 14.2%</p>
+                        </div>
+
+                    </div>
+
+                    <div class="leyenda">
+
+                        <div class="leyenda_elemento">
+                            <div class="color_youtubeAP"></div>
+                            <p>Youtube 7.4%</p>
+                        </div>
+
+                        <div class="leyenda_elemento">
+                            <div class="color_otrosAP"></div>
+                            <p>Otros 1.4%</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <p class="tab_text" id="endtext">
+                Este gráfico nos evidencia a Pinterest y a Instagram como plataformas líderes para ver fotos
+                de todo tipo, incluido, por supuesto, obras de arte.
+            </p>
+        </div>
+    </div>
+</body>
