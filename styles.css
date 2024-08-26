@@ -1,20 +1,24 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 header {
     text-align: center;
     color: white;
     padding: 10px;
-    background-color: rgb(0, 0, 172);
+    background-color: rgb(50, 50, 172);
     margin-left: 20%;
     width: 60%;
     border-radius: 10px;
     margin-bottom: 20px;
 }
-video{
+
+video {
     margin-left: 20%;
     width: 60%;
 }
 
 p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2vw;
 }
 
@@ -23,9 +27,17 @@ h1 {
 }
 
 h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
     text-align: center;
+}
+
+h3 {
+    margin-left: 10%;
+    font-size: x-large;
+}
+
+h4 {
+    font-size: large;
 }
 
 #endtext {
@@ -60,37 +72,35 @@ h2 {
     border-radius: 8px;
     transition: 0.5s;
 }
-.pie_percentage{
-    position: calc(0);
-}
+
 .nav_btn,
 .btn {
     padding: 10px;
     width: 20%;
     height: 100px;
-    background-color:rgb(0, 0, 172);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(50, 50, 172);
     font-size: x-large;
     outline: none;
     border: none;
-    color:white;
+    color: white;
     transition: 0.4s;
 }
-.subtab{
+
+.subtab {
     width: 85%;
-    margin-left: 7%;
-    background-color:rgb(184, 217, 228);
-    padding: 15px;
+    margin-left: 6.5%;
+    background-color: rgb(184, 217, 228);
+    padding: 1%;
     border-radius: 10px;
 }
 
 .tab_content {
-    width: 85%;
-    margin-left: 7.5%;
-    padding: 20px;
+    padding: 1%;
+    width: 80%;
+    margin-left: 9%;
     border-radius: 10px;
     animation: fadeEffect 0.6s;
-    background-color:lavender;
+    background-color: lavender;
 }
 
 .home {
@@ -114,7 +124,7 @@ h2 {
 
 .nav_btn:hover,
 .btn:hover {
-    background-color:midnightblue;
+    background-color: midnightblue;
 }
 
 .tab_text {
@@ -131,7 +141,6 @@ h2 {
 .leyenda_elemento {
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
 }
 
 .piechart {
@@ -155,15 +164,14 @@ h2 {
 }
 
 .barname {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    margin-bottom: 3px;
-    margin-left: 5px;
+    margin-left: 2%;
+    font-size: 14px;
 }
 
 .empty_bar {
+    margin-bottom: 16px;
     width: 100%;
-    height: 15px;
+    height: 16px;
     background-color: white;
     border-radius: 8px;
     display: flex;
@@ -171,7 +179,7 @@ h2 {
 }
 
 .percentage {
-    margin-left: 2%;
+    margin-left: 1%;
     opacity: 0;
     transition: 0.5s;
     font-size: 14px;
@@ -179,6 +187,32 @@ h2 {
 
 .empty_bar:hover .percentage {
     opacity: 1;
+}
+
+.music_genre ,
+.three_genres{
+    display: flex;
+    margin-left: 17%;
+}
+
+.three_genres{
+    margin-bottom: 20px;
+}
+
+.artist,
+.cinema_genre,
+.book_genre,
+.art_genre {
+    border-radius: 8px;
+    padding-left: 1.5%;
+    width: 20%;
+    margin-right: 8%;
+    background-color: white;
+}
+
+.space {
+    height: 20px;
+    background-color: lavender;
 }
 
 .piepart_musica,
@@ -207,7 +241,7 @@ h2 {
 .fullbar_comediaC:hover,
 .fullbar_fantasia:hover,
 .fullbar_pop:hover {
-    background-color: crimson;
+    background-color: hsl(9, 100%, 44%);
 }
 
 .piepart_cine,
@@ -236,7 +270,7 @@ h2 {
 .fullbar_misterioC:hover,
 .fullbar_ficcionL:hover,
 .fullbar_rock:hover {
-    background-color: orangered;
+    background-color: hsl(39, 100%, 30%);
 }
 
 .piepart_literatura,
@@ -265,7 +299,7 @@ h2 {
 .fullbar_accion:hover,
 .fullbar_romanceL:hover,
 .fullbar_reggaeton:hover {
-    background-color: darkgoldenrod;
+    background-color: hsl(60, 100%, 30%);
 
 }
 
@@ -289,7 +323,7 @@ h2 {
 .fullbar_drama:hover,
 .fullbar_misterioL:hover,
 .fullbar_hiphop:hover {
-    background-color: green;
+    background-color: hsl(120, 100%, 30%);
 }
 
 .piepart_snaptubeM,
@@ -309,7 +343,7 @@ h2 {
 .fullbar_suspensoC:hover,
 .fullbar_suspensoL:hover,
 .fullbar_jazz:hover {
-    background-color: darkgreen;
+    background-color: hsl(80, 61%, 30%);
 }
 
 .piepart_appleM,
@@ -327,7 +361,7 @@ h2 {
 .fullbar_aventuraC:hover,
 .fullbar_historia:hover,
 .fullbar_trap:hover {
-    background-color: grey;
+    background-color: hsl(300, 24%, 60%);
 }
 
 .piepart_moda,
@@ -348,7 +382,7 @@ h2 {
 .fullbar_terrorC:hover,
 .fullbar_comediaL:hover,
 .fullbar_blues:hover {
-    background-color: darksalmon;
+    background-color: hsl(350, 100%, 68%);
 }
 
 .piepart_artePlastica,
@@ -375,7 +409,7 @@ h2 {
 .fullbar_musical:hover,
 .fullbar_ciencia:hover,
 .fullbar_trova:hover {
-    background-color: deeppink;
+    background-color: hsl(330, 100%, 51%);
 }
 
 .piepart_cines,
@@ -390,7 +424,7 @@ h2 {
 .fullbar_scifi:hover,
 .fullbar_poesia:hover,
 .fullbar_experimental:hover {
-    background-color: darkmagenta;
+    background-color: hsl(300, 100%, 30%);
 }
 
 .piepart_paqueteM,
@@ -417,7 +451,7 @@ h2 {
 .fullbar_autoayuda:hover,
 .piepart_teatro:hover,
 .fullbar_funk:hover {
-    background-color: maroon;
+    background-color: hsl(0, 59%, 21%);
 }
 
 .fullbar_ficcionC,
@@ -429,7 +463,7 @@ h2 {
 .fullbar_ficcionC:hover,
 .fullbar_aventuraL:hover,
 .fullbar_edm:hover {
-    background-color: firebrick;
+    background-color: hsl(25, 75%, 27%);
 }
 
 .fullbar_hecReales,
@@ -441,7 +475,7 @@ h2 {
 .fullbar_hecReales:hover,
 .fullbar_filosofia:hover,
 .fullbar_rumba:hover {
-    background-color: coral;
+    background-color: hsl(0, 79%, 52%);
 }
 
 .fullbar_biografico,
@@ -453,7 +487,7 @@ h2 {
 .fullbar_biografico:hover,
 .fullbar_terror:hover,
 .fullbar_rnb:hover {
-    background-color: salmon;
+    background-color: hsl(17, 100%, 54%);
 }
 
 .fullbar_western,
@@ -463,7 +497,7 @@ h2 {
 
 .fullbar_western:hover,
 .fullbar_corridos:hover {
-    background-color: violet;
+    background-color: hsl(351, 100%, 66%);
 }
 
 .fullbar_indie {
@@ -471,7 +505,7 @@ h2 {
 }
 
 .fullbar_indie:hover {
-    background-color: mediumvioletred;
+    background-color: hsl(300, 76%, 52%);
 }
 
 .fullbar_flamenco {
@@ -479,7 +513,7 @@ h2 {
 }
 
 .fullbar_flamenco:hover {
-    background-color: mediumorchid;
+    background-color: hsl(302, 59%, 45%);
 }
 
 .fullbar_salsa {
@@ -487,7 +521,7 @@ h2 {
 }
 
 .fullbar_salsa:hover {
-    background-color: darkmagenta;
+    background-color: hsl(271, 76%, 33%);
 }
 
 .fullbar_bachata {
@@ -495,7 +529,7 @@ h2 {
 }
 
 .fullbar_bachata:hover {
-    background-color: darkslateblue;
+    background-color: hsl(248, 53%, 38%);
 }
 
 .fullbar_clasica {
@@ -503,7 +537,7 @@ h2 {
 }
 
 .fullbar_clasica:hover {
-    background-color: darkblue;
+    background-color: hsl(240, 100%, 30%);
 }
 
 .fullbar_country {
@@ -511,7 +545,7 @@ h2 {
 }
 
 .fullbar_country:hover {
-    background-color: midnightblue;
+    background-color: hsl(240, 100%, 5%);
 }
 
 /*piechart de ramas del arte*/
