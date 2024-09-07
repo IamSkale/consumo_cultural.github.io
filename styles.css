@@ -16,6 +16,7 @@ header {
 video {
     margin-left: 20%;
     width: 60%;
+    border-radius: 10px;
 }
 
 p {
@@ -215,6 +216,11 @@ h4 {
     background-color: lavender;
 }
 
+.links{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2vw;
+}
 .piepart_musica,
 .color_musica,
 .piepart_telegramM,
