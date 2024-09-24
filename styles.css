@@ -20,7 +20,7 @@ video {
 }
 
 p {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 
 h1 {
@@ -74,17 +74,59 @@ h4 {
     transition: 0.5s;
 }
 
-.nav_btn,
-.btn {
-    padding: 10px;
+.nav_btn {
     width: 20%;
-    height: 100px;
-    background-color: rgb(50, 50, 172);
     font-size: x-large;
+}
+
+.btn {
+    margin-left: 35%;
+    width: 30%;
+    border-radius: 8px;
+    font-size: x-large;
+}
+
+.provincia {
+    width: 6.25%;
+    font-size: 55%;
+}
+
+.list_btn {
+    width: 25%;
+    font-size: x-large;
+}
+
+.nav_btn,
+.btn,
+.provincia,
+.list_btn {
+    padding: 10px;
+    height: 60px;
+    background-color: rgb(50, 50, 172);
     outline: none;
     border: none;
     color: white;
     transition: 0.4s;
+}
+
+.show_more {
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.show_more:hover {
+    background-color: hsl(0, 0%, 80%);
+}
+
+.show_more:active {
+    background-color: hsl(0, 0%, 60%);
+}
+
+.extra {
+    display: none;
 }
 
 .subtab {
@@ -117,15 +159,16 @@ h4 {
     margin-bottom: 20px;
 }
 
-.btn {
-    margin-left: 35%;
-    width: 30%;
-    border-radius: 8px;
+.nav_btn:hover,
+.btn:hover,
+.provincia:hover,
+.list_btn:hover {
+    background-color: midnightblue;
 }
 
-.nav_btn:hover,
-.btn:hover {
-    background-color: midnightblue;
+.provincia:active,
+.list_btn:active {
+    background-color: rgb(50, 50, 112);
 }
 
 .tab_text {
@@ -190,13 +233,13 @@ h4 {
     opacity: 1;
 }
 
-.music_genre ,
-.three_genres{
+.music_genre,
+.three_genres {
     display: flex;
     margin-left: 17%;
 }
 
-.three_genres{
+.three_genres {
     margin-bottom: 20px;
 }
 
@@ -212,15 +255,16 @@ h4 {
 }
 
 .space {
-    height: 20px;
+    height: 10px;
     background-color: lavender;
 }
 
-.links{
+.links {
     text-align: center;
     margin-top: 20px;
     font-size: 1.2vw;
 }
+
 .piepart_musica,
 .color_musica,
 .piepart_telegramM,
@@ -235,7 +279,7 @@ h4 {
 .fullbar_comediaC,
 .fullbar_fantasia,
 .fullbar_pop {
-    background-color: tomato;
+    background-color: hsl(9, 100%, 64%);
 }
 
 .piepart_musica:hover,
@@ -925,4 +969,23 @@ h4 {
     to {
         opacity: 1
     }
+}
+
+
+.navbar_provincias,
+.navbar_lists {
+    margin-left: 10%;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+.provincia_opciones,
+.lista {
+    display: none;
+    transition: 0.4s;
 }
