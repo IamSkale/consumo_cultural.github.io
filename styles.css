@@ -18,9 +18,13 @@ video {
     width: 60%;
     border-radius: 10px;
 }
-
+.tab_text{
+    width: 80%;
+    margin-left: 10%;
+}
 p {
-    font-size: 1.1vw;
+    text-align: center;
+    font-size: 1vw;
 }
 
 h1 {
@@ -91,6 +95,11 @@ h4 {
     font-size: x;
 }
 
+.dp_btn {
+    width: 11.1%;
+    font-size: x;
+}
+
 .list_btn {
     width: 25%;
     font-size: large;
@@ -99,7 +108,8 @@ h4 {
 .nav_btn,
 .btn,
 .provincia,
-.list_btn {
+.list_btn,
+.dp_btn {
     padding: 10px;
     height: 60px;
     background-color: rgb(50, 50, 172);
@@ -110,13 +120,15 @@ h4 {
 }
 
 .provincia_opciones,
-.lista {
+.lista,
+.dp_tab {
     display: none;
     transition: 0.4s;
 }
 
 .grid_container{
     display: grid;
+    width: 100%;
 }
 
 .grid_columnI{
@@ -147,8 +159,8 @@ h4 {
 }
 
 .subtab {
-    width: 85%;
-    margin-left: 6.5%;
+    width: 90%;
+    margin-left: 4.5%;
     background-color: rgb(184, 217, 228);
     padding: 1%;
     border-radius: 10px;
@@ -168,14 +180,16 @@ h4 {
 }
 .navbar_provincias,
 .navbar_lists,
-.navbar{
+.navbar,
+.navbar_dp{
     overflow: hidden;
     display: flex;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 .navbar_provincias,
-.navbar_lists {
+.navbar_lists,
+.navbar_dp {
     margin-left: 10%;
     width: 80%;
 }
@@ -188,20 +202,15 @@ h4 {
 .nav_btn:hover,
 .btn:hover,
 .provincia:hover,
-.list_btn:hover {
+.list_btn:hover,
+.dp_btn:hover  {
     background-color: midnightblue;
 }
 
 .provincia:active,
-.list_btn:active {
+.list_btn:active,
+.dp_btn:active  {
     background-color: rgb(50, 50, 112);
-}
-
-.tab_text {
-    text-align: center;
-    margin-bottom: 5px;
-    width: 80%;
-    margin-left: 10%;
 }
 
 .leyenda {
@@ -261,8 +270,8 @@ h4 {
 
 .subsubtab {
     border-radius: 8px;
-    width: 70%;
-    margin-left: 14.5%;
+    width: 90%;
+    margin-left: 4.5%;
     background-color: white;
     padding: 1%;
 }
@@ -973,7 +982,53 @@ h4 {
 .fullbar_country {
     width: 1.2%;
 }
+#pageI{
+    grid-column: 1;
+    grid-row: 1;
+}
 
+#pageII{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#pageIII{
+    grid-column: 3;
+    grid-row: 1;
+}
+#pageIV{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+#pageV{
+    grid-column: 5;
+    grid-row: 1;
+}
+#pageVI{
+    grid-column: 6;
+    grid-row: 1;
+}
+#pageVII{
+    grid-column: 7;
+    grid-row: 1;
+}
+#pageVIII{
+    grid-column: 8;
+    grid-row: 1;
+}
+#pageIX{
+    grid-column: 9;
+    grid-row: 1;
+}
+#pageX{
+    grid-column: 10;
+    grid-row: 1;
+}
+#pageXI{
+    grid-column: 11;
+    grid-row: 1;
+}
 @keyframes fadeEffect {
     from {
         opacity: 0
