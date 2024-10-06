@@ -28,110 +28,19 @@
             <button class="nav_btn" onclick="openPage ('Page IV.html')">IV </button>
         </div>
         <div class="tab_content">
-            <p class="tab_text">
-                En los tiempos mencionados previamente, no existía esa facilidad que nos ha dado el internet para ver lo
-                que uno quiere, por tanto dependías únicamente de lo que estuviera en transmisión o de las actividades
-                que se realizaran en esos tiempos, en estos casos se realizaban numerosos eventos, ya sean de cine,
-                teatro, humor, jazz o música en general, montones de conciertos en la escalinata o el parque Almendares,
-                entre otros lugares, eventos en los que había mucha participación de la nueva trova, como Santiago Feliu
-                o Silvio Rodríguez, también tocaba a veces el grupo Moncada, muy gustado por los jóvenes de la época,
-                existían además varios clubes de lectura para los universitarios. En general, un ambiente muy sano y una
-                buena participación en todo este tipo de eventos por parte de los jóvenes, atendiendo más a los datos se
-                ofertaban casi 1 millón de películas al año, alrededor de 60000 eventos de música, entre teatro y danza
-                habían entre 10000 y 12000 espectáculos al año y rondando por las 2000 exposiciones de profesionales del
-                arte, algunos de estos números han bajado pero otros han aumentado, en el 2022 contamos con casi 54000
-                películas, 20 veces menos que en aquellos tiempos, pero el doble de eventos de música y de teatro y
-                danza y también casi el doble de exposiciones de artistas, ya conocemos que el teatro no es nada
-                frecuentado por los jovenes hoy en dia, visto por los datos recogidos en la tabla 1, pero si han
-                aumentado tanto estos números.
-            </p>
-
-            <p class="tab_text">
-                ¿Se seguirán visitando este tipo de lugares con frecuencia en la actualidad?
-            </p>
-
             <p class="tab_text" id="endtext">
-                Pregunta por la cual decidimos verificar las plataformas donde estos jóvenes suelen disfrutar de cada
-                rama de la cultura y obtuvimos las siguientes respuestas:
+                En los tiempos mencionados previamente se hacía muy difícil tener un consumo cultural desde la comodidad
+                de la casa, pues en la televisión había solo 2 canales, los cuales funcionaban hasta cierta hora de la
+                noche, según el ICRT el 31 de diciembre del 2022 habían un total de 45 canales de televisión en toda
+                Cuba, 1 canal en Artemisa, Cienfuegos y Sancti Spíritus, 3 en Mayabeque, Villa Clara, Holguín, Granma y
+                la Isla de la Juventud, 13 en la Habana y en el resto de provincias 2, llegando a una suma de 98182
+                horas de contenido emitido por televisión ese año, número que ha aumentado sustancialmente desde esa
+                época, la fecha más antigua que se tiene de este dato es del 1999 con 9425 horas ese año, sin embargo
+                logramos darnos cuenta que a pesar de este incremento, a la hora de escoger un medio como fuente
+                para disfrutar contenido audiovisual, la television generalmente no es una opcion, como muestra la
+                siguiente tabla:<button class="show_more" id="btn_1" onclick="show('pcf','btn_1')">Ver Tabla</button>
             </p>
-
-            <div class="subtab">
-                <h2 class="chart_title">Plataforma de Música Favorita</h2>
-                <div class="piechart" id="plataforma_musica">
-
-                    <div class="chart">
-                        <div class="piepart_telegramM"></div>
-                        <div class="piepart_youtubeM"></div>
-                        <div class="piepart_spotify"></div>
-                        <div class="piepart_deezer"></div>
-                        <div class="piepart_snaptubeM"></div>
-                        <div class="piepart_appleM"></div>
-                        <div class="piepart_youtubeMM"></div>
-                        <div class="piepart_vidmate"></div>
-                        <div class="piepart_paqueteM"></div>
-                    </div>
-
-                    <div class="leyenda">
-
-                        <div class="leyenda_elemento">
-                            <div class="color_telegramM"></div>
-                            <p>Telegram 48.2%</p>
-                        </div>
-
-                        <div class="leyenda_elemento">
-                            <div class="color_youtubeM"></div>
-                            <p>Youtube 22.9%</p>
-                        </div>
-
-                        <div class="leyenda_elemento">
-                            <div class="color_spotify"></div>
-                            <p>Spotify 11.2%</p>
-                        </div>
-
-                        <div class="leyenda_elemento">
-                            <div class="color_deezer"></div>
-                            <p>Deezer 8.8%</p>
-                        </div>
-
-                        <div class="leyenda_elemento">
-                            <div class="color_snaptubeM"></div>
-                            <p>Snaptube 2.9%</p>
-                        </div>
-
-                    </div>
-
-                    <div class="leyenda">
-
-                        <div class="leyenda_elemento">
-                            <div class="color_appleM"></div>
-                            <p>Apple Music 2.4%</p>
-                        </div>
-
-                        <div class="leyenda_elemento">
-                            <div class="color_youtubeMM"></div>
-                            <p>Youtube Music 1.8%</p>
-                        </div>
-
-                        <div class="leyenda_elemento">
-                            <div class="color_vidmate"></div>
-                            <p>Vidmate 1.2%</p>
-                        </div>
-
-                        <div class="leyenda_elemento">
-                            <div class="color_paqueteM"></div>
-                            <p>Paquete Semanal 0.6%</p>
-                        </div>
-
-                    </div>
-                </div>
-                <button class="show_more" onclick="openPage('Data Product.html')">Ver todos los datos</button>
-            </div>
-            <p class="tab_text" id="endtext">
-                Esto solo nos muestra que la facilidad que nos presta Telegram, a la hora de buscar música nueva, es
-                bastante, a diferencia de Spotify, con la necesidad de un VPN o de estar conectado todo el tiempo al
-                igual que Youtube Music por ejemplo.
-            </p>
-            <div class="subtab">
+            <div class="subtab" id="pcf">
                 <h2 class="chart_title">Plataforma de Cine Favorita</h2>
                 <div class="piechart" id="plataforma_cine">
 
@@ -209,12 +118,15 @@
                 </div>
                 <button class="show_more" onclick="openPage('Data Product.html')">Ver todos los datos</button>
             </div>
-            <p class="tab_text" id="endtext">
-                Aquí se ve como el Paquete semanal sigue desde hace años formando parte de nuestras vidas, debido a la
-                variedad
-                de contenidos que tiene.
+            <p class="tab_text">
+                Las casas generalmente no eran de tener muchos libros, por tanto, como mínimo, había que moverse para
+                tener un consumo cultural variado, se debe tener en cuenta que tampoco habían librerías hasta el 2005 en
+                Cuba, y solo habían entre 310 y 335 bibliotecas por todo el país en la década de los 80, ahora contamos
+                con alrededor de 400 bibliotecas y casi 300 librerías, de todos modos los jovenes universitarios deciden
+                aprovechar las facilidades que les brinda el internet, como se muestra a continuación:<button
+                    class="show_more" id="btn_2" onclick="show('plf','btn_2')">Ver Tabla</button>
             </p>
-            <div class="subtab">
+            <div class="subtab" id="plf">
                 <h2 class="chart_title">Plataforma de Literatura Favorita</h2>
                 <div class="piechart" id="plataforma_literatura">
 
@@ -262,62 +174,151 @@
                 </div>
                 <button class="show_more" onclick="openPage('Data Product.html')">Ver todos los datos</button>
             </div>
-            <p class="tab_text" id="endtext">
-                Telegram toma la delantera de nuevo pero la lectura en físico no se queda atrás por mucho, a pesar de lo
-                difícil que puede resultar a veces conseguir libros nuevos.
+            <p>
+                Lo que se podria considerar como una comodidad a provocado entre otras cosas, que decaigan las visitas a
+                eventos como La Feria Internacional del Libro, de casi 5 millones en el 2005 a 2.7 millones en el 2022,
+                asi como la cantidad de ejemplares vendidos que bajó de 4 millones el el 2005 igual a 1.3 millones en el
+                2022, evento el cual es mucho más que ir a comprar libros, llegando a ser una buena salida en familia o
+                con tu grupo de amistades, o tambien la cantidad de servicios prestados en las bibliotecas con un
+                promedio en los ultimos 30 años de casi 13 mil y tuvimos 8 mil en el 2022 y 3 en el 2021.
+
             </p>
-            <div class="subtab">
-                <h2 class="chart_title">Plataforma de Artes Plásticas Favorita</h2>
-                <div class="piechart" id="plataforma_artesPlast">
+            <p>
+                Ahora les muestro un poco las plataformas más usadas en otras ramas del arte como la música y las artes
+                plásticas:<button class="show_more" id="btn_3" onclick="show('pf','btn_3')">Ver Tabla</button>
+            </p>
+            <div id="pf">
+                <div class="subtab">
+                    <h2 class="chart_title">Plataforma de Música Favorita</h2>
+                    <div class="piechart" id="plataforma_musica">
 
-                    <div class="chart">
-                        <div class="piepart_pinterest"></div>
-                        <div class="piepart_instagram"></div>
-                        <div class="piepart_galerias"></div>
-                        <div class="piepart_youtubeAP"></div>
-                        <div class="piepart_otrosAP"></div>
+                        <div class="chart">
+                            <div class="piepart_telegramM"></div>
+                            <div class="piepart_youtubeM"></div>
+                            <div class="piepart_spotify"></div>
+                            <div class="piepart_deezer"></div>
+                            <div class="piepart_snaptubeM"></div>
+                            <div class="piepart_appleM"></div>
+                            <div class="piepart_youtubeMM"></div>
+                            <div class="piepart_vidmate"></div>
+                            <div class="piepart_paqueteM"></div>
+                        </div>
+
+                        <div class="leyenda">
+
+                            <div class="leyenda_elemento">
+                                <div class="color_telegramM"></div>
+                                <p>Telegram 48.2%</p>
+                            </div>
+
+                            <div class="leyenda_elemento">
+                                <div class="color_youtubeM"></div>
+                                <p>Youtube 22.9%</p>
+                            </div>
+
+                            <div class="leyenda_elemento">
+                                <div class="color_spotify"></div>
+                                <p>Spotify 11.2%</p>
+                            </div>
+
+                            <div class="leyenda_elemento">
+                                <div class="color_deezer"></div>
+                                <p>Deezer 8.8%</p>
+                            </div>
+
+                            <div class="leyenda_elemento">
+                                <div class="color_snaptubeM"></div>
+                                <p>Snaptube 2.9%</p>
+                            </div>
+
+                        </div>
+
+                        <div class="leyenda">
+
+                            <div class="leyenda_elemento">
+                                <div class="color_appleM"></div>
+                                <p>Apple Music 2.4%</p>
+                            </div>
+
+                            <div class="leyenda_elemento">
+                                <div class="color_youtubeMM"></div>
+                                <p>Youtube Music 1.8%</p>
+                            </div>
+
+                            <div class="leyenda_elemento">
+                                <div class="color_vidmate"></div>
+                                <p>Vidmate 1.2%</p>
+                            </div>
+
+                            <div class="leyenda_elemento">
+                                <div class="color_paqueteM"></div>
+                                <p>Paquete Semanal 0.6%</p>
+                            </div>
+
+                        </div>
                     </div>
-
-                    <div class="leyenda">
-
-                        <div class="leyenda_elemento">
-                            <div class="color_pinterest"></div>
-                            <p>Pinterest 41.9%</p>
-                        </div>
-
-                        <div class="leyenda_elemento">
-                            <div class="color_instagram"></div>
-                            <p>Instagram 35.1%</p>
-                        </div>
-
-                        <div class="leyenda_elemento">
-                            <div class="color_galerias"></div>
-                            <p>Galerías de Arte 14.2%</p>
-                        </div>
-
-                    </div>
-
-                    <div class="leyenda">
-
-                        <div class="leyenda_elemento">
-                            <div class="color_youtubeAP"></div>
-                            <p>Youtube 7.4%</p>
-                        </div>
-
-                        <div class="leyenda_elemento">
-                            <div class="color_otrosAP"></div>
-                            <p>Otros 1.4%</p>
-                        </div>
-
-                    </div>
-
+                    <button class="show_more" onclick="openPage('Data Product.html')">Ver todos los datos</button>
                 </div>
-                <button class="show_more" onclick="openPage('Data Product.html')">Ver todos los datos</button>
+                <p class="tab_text" id="endtext">
+                    Esto solo nos muestra que la facilidad que nos presta Telegram, a la hora de buscar música nueva, es
+                    bastante, a diferencia de Spotify, con la necesidad de un VPN o de estar conectado todo el tiempo al
+                    igual que Youtube Music por ejemplo.
+                </p>
+                <div class="subtab">
+                    <h2 class="chart_title">Plataforma de Artes Plásticas Favorita</h2>
+                    <div class="piechart" id="plataforma_artesPlast">
+
+                        <div class="chart">
+                            <div class="piepart_pinterest"></div>
+                            <div class="piepart_instagram"></div>
+                            <div class="piepart_galerias"></div>
+                            <div class="piepart_youtubeAP"></div>
+                            <div class="piepart_otrosAP"></div>
+                        </div>
+
+                        <div class="leyenda">
+
+                            <div class="leyenda_elemento">
+                                <div class="color_pinterest"></div>
+                                <p>Pinterest 41.9%</p>
+                            </div>
+
+                            <div class="leyenda_elemento">
+                                <div class="color_instagram"></div>
+                                <p>Instagram 35.1%</p>
+                            </div>
+
+                            <div class="leyenda_elemento">
+                                <div class="color_galerias"></div>
+                                <p>Galerías de Arte 14.2%</p>
+                            </div>
+
+                        </div>
+
+                        <div class="leyenda">
+
+                            <div class="leyenda_elemento">
+                                <div class="color_youtubeAP"></div>
+                                <p>Youtube 7.4%</p>
+                            </div>
+
+                            <div class="leyenda_elemento">
+                                <div class="color_otrosAP"></div>
+                                <p>Otros 1.4%</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <button class="show_more" onclick="openPage('Data Product.html')">Ver todos los datos</button>
+                </div>
+                <p class="tab_text" id="endtext">
+                    Aquí podemos evidenciar como, aunque tengamos una buena cantidad de galerías de arte por todo el
+                    pais,
+                    una visita a estas no forma parte de la rutina de muchos universitarios.
+                </p>
             </div>
-            <p class="tab_text" id="endtext">
-                Este gráfico solo muestra a Pinterest y a Instagram como plataformas líderes para ver fotos de todo
-                tipo, incluido, por supuesto, obras de arte.
-            </p>
+
         </div>
     </div>
 </body>
